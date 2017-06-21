@@ -1,0 +1,37 @@
+{
+    "name": "brunodebarros/fix-php-post-input",
+    "type": "library",
+    "description": "If your $_POST/$_FILES are empty and they shouldn't be, this library fixes them.",
+    "keywords": [
+        "compatibility",
+        "post",
+        "files",
+        "input"
+    ],
+    "homepage": "https://github.com/BrunoDeBarros/fix-php-post-input",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bruno De Barros",
+            "email": "bruno@terraduo.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "riverline/multipart-parser": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Brunodebarros\\FixPhpPostInput\\": ""
+        },
+        "files": [
+            "bootstrap.php"
+        ]
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    }
+}

@@ -86,7 +86,7 @@ class FixPhpPostInput {
             $server = $_SERVER;
         }
 
-        if (count($post) == 0 || IS_DEBUGGING) {
+        if (count($post) == 0) {
             $is_post = false;
             foreach ($server as $key => $value) {
                 $search = "REQUEST_METHOD";

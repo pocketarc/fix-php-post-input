@@ -46,7 +46,12 @@ class FixPhpPostInput {
     protected function store_temp($contents) {
         $tmp_name = tempnam(sys_get_temp_dir(), "file-");
         $this->temp_files[] = $tmp_name;
-        file_put_contents($tmp_name, $contents);
+        $result = file_put_contents($tmp_name, $contents);
+
+        if (strlen($contents) !== $result) {
+            throw new \RuntimeException("Could not store temp file in $tmp_name.");
+        }
+
         return $tmp_name;
     }
 

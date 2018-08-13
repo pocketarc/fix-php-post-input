@@ -1,23 +1,23 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "775c19eaa545c21eb4aa4ca12aa1d92e",
+    "content-hash": "9b3b2714adf4aa244ebcc5410e3afee1",
     "packages": [
         {
             "name": "riverline/multipart-parser",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Riverline/multipart-parser.git",
-                "reference": "a06d21e154090696b3f137588b8d439aa2372bc5"
+                "url": "https://github.com/BrunoDeBarros/multipart-parser.git",
+                "reference": "24fe25355e14eb86774e6c8dba35c52c62a091e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Riverline/multipart-parser/zipball/a06d21e154090696b3f137588b8d439aa2372bc5",
-                "reference": "a06d21e154090696b3f137588b8d439aa2372bc5",
+                "url": "https://api.github.com/repos/BrunoDeBarros/multipart-parser/zipball/24fe25355e14eb86774e6c8dba35c52c62a091e6",
+                "reference": "24fe25355e14eb86774e6c8dba35c52c62a091e6",
                 "shasum": ""
             },
             "require": {
@@ -32,7 +32,6 @@
                     "Riverline\\MultiPartParser": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -52,7 +51,10 @@
                 "multipart",
                 "parser"
             ],
-            "time": "2016-03-25T08:32:26+00:00"
+            "support": {
+                "source": "https://github.com/BrunoDeBarros/multipart-parser/tree/master"
+            },
+            "time": "2018-08-13T07:57:45+00:00"
         }
     ],
     "packages-dev": [],

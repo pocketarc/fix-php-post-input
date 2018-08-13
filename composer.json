@@ -16,6 +16,12 @@
             "email": "bruno@terraduo.com"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/brunodebarros/multipart-parser"
+        }
+    ],
     "require": {
         "php": ">=5.4",
         "riverline/multipart-parser": "dev-master"

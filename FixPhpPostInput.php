@@ -1,11 +1,11 @@
 <?php
 
-namespace Brunodebarros\FixPhpPostInput;
+namespace PocketArC\FixPhpPostInput;
+
+use Riverline\MultiPartParser\StreamedPart;
 
 /**
  * If your $_POST/$_FILES are empty and they shouldn't be, this library fixes them.
- *
- * @package Brunodebarros\FixPhpPostInput
  */
 class FixPhpPostInput {
 
@@ -110,7 +110,12 @@ class FixPhpPostInput {
                     if ($is_json) {
                         $post = json_decode($php_input, true);
                     } elseif ($is_multipart) {
-                        $document = new \Riverline\MultiPartParser\Part("Content-Type: " . $server["CONTENT_TYPE"] . "\n\n" . $php_input);
+						$content = "Content-Type: " . $server["CONTENT_TYPE"] . "\n\n" . $php_input;
+	                    $stream = fopen('php://temp', 'rw');
+	                    fwrite($stream, $content);
+	                    rewind($stream);
+
+                        $document = new StreamedPart($stream);
                         foreach ($document->getParts() as $part) {
                             if ($part->isFile()) {
                                 $size = strlen($part->getBody());

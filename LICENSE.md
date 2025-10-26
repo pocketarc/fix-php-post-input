@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2017 Bruno De Barros
+Copyright (c) 2025 Bruno Moreira
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

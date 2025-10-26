@@ -1,6 +1,6 @@
-## What is brunodebarros/fix-php-post-input
+## What is pocketarc/fix-php-post-input
 
-`brunodebarros/fix-php-post-input` fixes your `$_POST` and `$_FILES` if they're empty and they shouldn't be.
+`pocketarc/fix-php-post-input` fixes your `$_POST` and `$_FILES` if they're empty and they shouldn't be.
 
 **Why?** Some incorrectly setup servers will not pass the right information required for PHP to automatically process input data (e.g. they'll say the HTTP method was GET because of an internal redirect). 
 
@@ -16,10 +16,10 @@ As a bonus, it will also process JSON (`application/json`) input into `$_POST` f
 
 ## Installation
 
-`brunodebarros/fix-php-post-input` loads automatically with Composer.
+`pocketarc/fix-php-post-input` loads automatically with Composer.
 
 ```
-composer require brunodebarros/fix-php-post-input
+composer require pocketarc/fix-php-post-input
 ```
 
 ## Usage
@@ -28,4 +28,4 @@ Once required, the package will automatically fix your `$_POST`/`$_FILES` for yo
 
 ## Suggestions, questions and complaints.
 
-If you've got any suggestions, questions, or anything you don't like about this library, [you should create an issue here](https://github.com/BrunoDeBarros/fix-php-post-input/issues/new). Feel free to fork this project, if you want to contribute to it.
+If you've got any suggestions, questions, or anything you don't like about this library, [you should create an issue here](https://github.com/pocketarc/fix-php-post-input/issues/new). Feel free to fork this project, if you want to contribute to it.

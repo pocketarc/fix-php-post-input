@@ -1,5 +1,5 @@
 {
-    "name": "brunodebarros/fix-php-post-input",
+    "name": "pocketarc/fix-php-post-input",
     "type": "library",
     "description": "If your $_POST/$_FILES are empty and they shouldn't be, this library fixes them.",
     "keywords": [
@@ -8,27 +8,21 @@
         "files",
         "input"
     ],
-    "homepage": "https://github.com/BrunoDeBarros/fix-php-post-input",
+    "homepage": "https://github.com/pocketarc/fix-php-post-input",
     "license": "MIT",
     "authors": [
         {
-            "name": "Bruno De Barros",
-            "email": "bruno@terraduo.com"
-        }
-    ],
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/brunodebarros/multipart-parser"
+            "name": "Bruno Moreira",
+            "email": "bruno.moreira@solmyr.com"
         }
     ],
     "require": {
-        "php": ">=5.4",
-        "riverline/multipart-parser": "dev-master"
+        "php": ">=7.0",
+        "riverline/multipart-parser": "^2"
     },
     "autoload": {
         "psr-4": {
-            "Brunodebarros\\FixPhpPostInput\\": ""
+            "PocketArC\\FixPhpPostInput\\": ""
         },
         "files": [
             "bootstrap.php"
